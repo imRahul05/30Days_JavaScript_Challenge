@@ -5,6 +5,11 @@ function App() {
   const [TodoList, setTodoList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [currentTodo, setCurrentTodo] = useState(null);
+  const [CompleteTodo,setCompleteTodo] = useState(false)
+
+
+  const [arr,setarr]=useState(["rahul","vikash","sachin"]);
+  const name = "ankur";
 
   const addList = (inputText) => {
     setTodoList([...TodoList, inputText]);
@@ -29,9 +34,15 @@ function App() {
     setCurrentTodo({ index, text: TodoList[index] });
   };
 
+  const handleCompleteTodo = (index) => {
+    setCompleteTodo(!CompleteTodo)
+  }
+
   return (
     <>
-      <h1 className="text-center text-3xl p-4">Todo APP</h1>
+      <h1 className="text-center text-3xl p-4">Todo APP
+        {name}
+      </h1> 
       <TodoInput
         addList={addList}
         isEditing={isEditing}
@@ -55,10 +66,27 @@ function App() {
               >
                 Delete
               </button>
-            </div>
+
+              <button
+              className="bg-green-500 text-white p-2 rounded" 
+              onClick={() => handleCompleteTodo(index)}>
+                {CompleteTodo? 'Completed' : 'Incomplete'}  {CompleteTodo? <i class="fas fa-check"></i> : <i class="fas fa-times"></i>}
+                
+              </button>
+                
           </li>
         ))}
       </ul>
+
+
+   
+  
+<div>{
+   arr.map((i) =>{
+  return  <li>{i}</li>
+   })}
+  </div>
+
 
     </>
   );
