@@ -19,3 +19,8 @@ function b(){
   it will be put under call stack and the moment it will be executed ,
   it will be removed and b() will be put in call stack for execution.
 */
+
+
+
+let arr= [32,31231,1212,2]
+
