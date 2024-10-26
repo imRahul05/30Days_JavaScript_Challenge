@@ -1,7 +1,7 @@
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-
+       
         <style>
         nav{
         display: flex;
@@ -53,7 +53,9 @@ class SpecialFooter extends HTMLElement {
       footer {
     padding: 20px;
     background-color: rgb(55, 97, 98);
-    align-items:center
+    align-items:center;
+    justify-content:center;
+
      }
     footer p {
     margin: 0;
