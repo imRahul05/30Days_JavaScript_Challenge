@@ -36,7 +36,7 @@ class SpecialHeader extends HTMLElement {
         <div class="left"> WEB HOMEPAGE </div>
         <div class="right">
          <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
