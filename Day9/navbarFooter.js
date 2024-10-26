@@ -27,16 +27,19 @@ class SpecialHeader extends HTMLElement {
         color:lavender;
         font-size: 1.03rem;
         }
+         .left{
+    font-size: 1.5rem;
+ }
         
         </style>
     <nav>
         <div class="left"> WEB HOMEPAGE </div>
         <div class="right">
          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
             <li><a href="cart.html">Cart</a></li>
          </ul>
         </div>
@@ -55,6 +58,7 @@ class SpecialFooter extends HTMLElement {
     background-color: rgb(55, 97, 98);
     align-items:center;
     justify-content:center;
+     margin: 0;
 
      }
     footer p {
@@ -62,6 +66,10 @@ class SpecialFooter extends HTMLElement {
     font-size: 0.9em;
     align-items:center
     }
+     body {
+          margin: 0;
+          padding: 0;
+        }
     </style>
     <footer>
 
