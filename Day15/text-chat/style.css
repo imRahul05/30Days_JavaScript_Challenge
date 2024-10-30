@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#container {
+    box-sizing: border-box;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 600px; /* Optional: Limit the maximum width of the container */
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100%; /* Ensure the chat body takes the full width of the container */
+}
+#chat-box{
+    margin: 10px;
+}
