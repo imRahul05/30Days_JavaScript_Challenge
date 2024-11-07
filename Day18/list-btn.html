@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in the Blanks</title>
+    <style>
+        .list-item {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: darkblue;
+        }
+        .title {
+            color: black;
+            font-size: 24px;
+        }
+        .description {
+            color: gray;
+            font-size: 16px;
+        }
+        .form-field {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- Use an h2 tag for the section heading, provide class name as `title`-->
+       <h2 class="title">My website</h2>
+        <ul>
+            <!-- Use li tags for list items, provide class name as `list-item` -->
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Projects</li>
+        </ul>
+    </section>
+    <section>
+        <!-- Use a paragraph tag for text, provide class name as `description` -->
+       <p class="description">This is my website</p>
+        <!-- Use a button tag for the button,provide class name as `button` -->
+      <button class="button">Click Here</button>
+    </section>
+    <section>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-field">
+            <!-- Use a button tag for the submit button, type should be submit, provide class name as `button` -->
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

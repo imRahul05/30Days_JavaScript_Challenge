@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill in the Blanks</title>
+    <style>
+         /* This is called as comment                   */
+        /*  Need to write your answer between :  ;     */
+       /*   Remove the _____ and write your answer    */
+      /*    Example:  border: 1px solid teal;         */
+
+      .list-item {
+        border: 1px solid teal;
+        padding: 8px ;
+        margin: 7px;
+      }
+
+      #action-button {
+        background-color:teal;
+        color: white;
+        padding: 10px;
+        border: 2px solid grey;
+        cursor:pointer;
+        margin: 4px;
+      }
+
+      #action-button:hover {
+        background-color: green;
+      }
+
+      .title {
+        color:black;
+        font-size:26px;
+      }
+
+      .description {
+        color:black;
+        font-size: 15px;
+      }
+
+      .form-field {
+        width:100%;
+        padding: 8px;
+        border: 5px solid black;
+        margin-bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2 class="title">My List</h2>
+      <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+      </ul>
+    </section>
+    <section>
+      <p class="description">Here is some text.</p>
+      <button id="action-button">Click Me</button>
+    </section>
+    <section>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-field" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-field" />
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
