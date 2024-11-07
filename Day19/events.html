@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Click and Prompt Event</title>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+      h1 {
+        color: blue;
+      }
+      button {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border: none;
+      }
+      p {
+        color: red;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click the Button</h1>
+
+    <button id="clickBtn">Click Me</button>
+
+    <button id="addNameBtn">Add Name</button>
+
+    <p id="message"></p>
+    
+    <input id="inputField" type="text">
+  </body>
+  <script>
+    // Click event to show an alert, Remove ____ and add event
+    document.getElementById("clickBtn").onclick= function () {
+      alert("Button clicked!");
+    };
+
+    // Remove ____ and add event
+    // Click event to prompt user for their name and display it in the paragraph
+    document.getElementById("addNameBtn").onclick= function () {
+      let name = prompt("Please enter your name:");
+      document.getElementById("message").textContent = "Hello, " + name;
+    };
+
+    // Add this if you create an input field in the HTML
+    // Change event on input field (this is optional, if input field is added)
+    document.getElementById("inputField").onchange = function () {
+      alert("Input field value changed!");
+    };
+  </script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover and Input Event</title>
+    <style>
+      .hover-effect {
+        width: 200px;
+        height: auto;
+        border: 2px solid black;
+      }
+      p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hover over the image and enter text</h1>
+    <img id="image" class="hover-effect" src="https://static.vecteezy.com/system/resources/previews/032/257/185/non_2x/wallpapers-for-the-beautiful-peacock-wallpaper-ai-generated-free-photo.jpg" alt="Sample Image" />
+    <p id="hoverMsg">Hover over the image to see the effect</p>
+    <input type="text" id="textInput" placeholder="Type something" />
+    <p id="inputDisplay">Your input will appear here.</p>
+  </body>
+  <script>
+    // Mouseover event to change border color, Remove ____ and add event
+    document.getElementById("image").onmouseover = function () {
+      this.style.borderColor = "red";
+      document.getElementById("hoverMsg").textContent =
+        "You are hovering over the image!";
+    };
+
+    // Mouseout event to revert the border color, Remove ____ and add event
+    document.getElementById("image").onmouseout = function () {
+      this.style.borderColor = "black";
+      document.getElementById("hoverMsg").textContent =
+        "Hover over the image to see the effect";
+    };
+
+    // Input event to update paragraph with input field value, Remove ____ and add event
+    document.getElementById("textInput").oninput = function () {
+      document.getElementById("inputDisplay").textContent =
+        "You typed: " + this.value;
+    };
+  </script>
+</html>
