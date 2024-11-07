@@ -1,7 +1,8 @@
 # 30Days_JavaScript_Challenge
 
-Welcome to the 30 Days JavaScript Challenge! This repository contains a series of projects and exercises designed to help you improve your JavaScript skills over the course of 30 days.
+### Repository: [30Days_JavaScript_Challenge](https://github.com/imRahul05/30Days_JavaScript_Challenge)
 
+This repository is designed to help users improve their JavaScript skills over 30 days through a series of projects and exercises. It includes a variety of JavaScript concepts such as variables, functions, events, and more. The repository also features live demos of projects like Todo Apps.
 ## Live Demos
 
 Check out the live demos of some of the projects:
