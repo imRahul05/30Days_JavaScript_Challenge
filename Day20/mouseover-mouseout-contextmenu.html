@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    
+    <style>
+       /* Please Add All The Styles Here in the Style Tag */
+       body{
+         padding: 10px;
+         background-color: 	#EDEADE;
+       }
+       .container{
+         display: flex;
+         flex-direction: column;
+       }
+       #button{
+         margin: 10px;
+         padding: 10px;
+         background-color: #301934;
+         border-radius: 8px;
+         color: white;
+       }
+       #image{
+         height: 200px;
+         width: 300px;
+         border-radius: 10px;
+       }
+       #textInput{
+         padding: 10px;
+         margin: 5px;
+         border-radius: 8px;
+         border:2px solid grey;
+       }
+       .box1{
+         padding: 10px;
+         margin: 5px;
+       }
+    </style>
+  </head>
+  <body>
+     <!--Please Code HTML tags Here in the Body Tag-->
+     <button id="button">Click Here</button>
+      <p id="para"></p>
+  <div class="container">
+     <img id="image" src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="">
+     <p id="image-para"></p>
+  </div>
+  
+  <input type="text" id="textInput" placeholder="Type here.....">
+   <div class="box1" id="keyOutput"></div> 
+   </div>
+  </body>
+  <script >
+  
+  const btn = document.getElementById("button")
+  const dis = document.getElementById("para")
+  const pic = document.getElementById("image")
+  const img_para = document.getElementById("image-para")
+  const text_input = document.getElementById("textInput")
+  const keyOutput = document.getElementById("keyOutput");
+  
+  btn.addEventListener("click",function(){
+    const input = prompt("Enter your name..")
+    dis.textContent= 'Welcome , ' + input;
+  })
+  
+  dis.addEventListener("dblclick",function(){
+    dis.textContent="Have a nice day!";
+  })
+  
+  pic.addEventListener("mouseover",function(){
+    pic.style.border="2px solid red"
+    img_para.textContent="You are hovering over the image"
+  })
+  
+  pic.addEventListener("mouseout",function(){
+    pic.style.border=""
+    img_para.textContent=""
+  })
+  
+  pic.addEventListener("contextmenu",function(e){
+    e.preventDefault();
+    alert("Right click is disabled on this image")
+  })
+  text_input.addEventListener("keydown",function(){
+    keyOutput.textContent = `Key pressed: ${event.key}`
+  })
+  
+  
+    // Please Select The HTML Tags Created Above and Attach Events Here
+  </script>
+</html>
