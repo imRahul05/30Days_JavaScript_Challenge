@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector('.parent')
+        console.log(parent)
+        console.log(parent.children )
+        
+
+        for(let i = 0; i < parent.children.length; i++){
+            console.log(parent.children[i].innerHTML)
+        }
+
+
+        const div = document.createElement("div")
+        console.log(div)
+
+
+        ///TWO WAYS
+        //div.innerHTML = "Friday"
+       //div.innerText = "Friday"
+       const text = document.createTextNode("Friday")
+       div.className = "main"
+       div.id = "container"
+       div.style.color = "red"
+       div.style.backgroundColor = "yellow"
+       div.appendChild(text)
+       document.body.appendChild(div)
+
+
+        console.log(parent.childNodes)
+    </script>
+</body>
+</html>
