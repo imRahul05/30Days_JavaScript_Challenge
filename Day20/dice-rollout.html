@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .dice1{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 7px;
+    border: 2px solid black;
+    grid-template-columns: auto auto;
+    display: grid;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.b1{
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 50%;
+    place-self: centre;
+}
+    </style>
+</head>
+<body>
+ <div class="dice1"></div>
+ <br>
+  <button class="btn1">Roll one Dice</button>
+  <button class="btn2">Roll two Dice</button>
+   
+</body>
+
+<script>
+    const btn1 = document.querySelector(".btn1");
+    const btn2 = document.querySelector(".btn2");
+    const parent = document.querySelector(".dice1");
+
+
+    btn1.addEventListener("click", function(){
+        const randomNumber = Math.floor(Math.random() *6) +1;
+         console.log(randomNumber)
+         parent.innerHTML =""
+        for(let i=1; i<=randomNumber; i++){
+        const div = document.createElement("div")
+        div.className = "b1"
+        parent.appendChild(div);
+        console.log(div)
+        }
+
+       
+    })
+</script>
+</html>
