@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    
+    <style>
+       /* Please Add All The Styles Here in the Style Tag */
+       body{
+         display: flex;
+         justify-content: center;
+         align-items: centre;
+         height: 100vh; 
+         background-color: #FAF9F6;
+       }
+       #textinput,#button{
+         border: 2px solid grey;
+         border-radius: 5px;
+         padding: 10px;
+         margin: 4px;
+       }
+     .box{
+       background-color: #E2DFD2;
+     }
+    </style>
+  </head>
+  <body>
+     <!--Please Code HTML tags Here in the Body Tag-->
+    <div class="form">
+       <input id="textinput" type="text" placeholder="Type here...">
+     <button id="button" disabled>Clear</button>
+     
+    <p id="para"></p>
+    </div>
+
+     
+  </body>
+  <script >
+    // Please Select The HTML Tags Created Above and Attach Events Here
+    const input = document.getElementById("textinput")
+    const dis = document.getElementById("para")
+    const btn = document.getElementById("button")
+    
+    input.oninput= function(){
+        dis.textContent="You are typing : " + this.value;
+        btn.disabled=false
+        dis.style.color="green"
+    };
+
+    btn.addEventListener("click",function(){
+      input.value=""
+      dis.textContent="Input cleared!"
+      btn.disabled=true
+      dis.style.color="black"
+
+    })
+        
+    // input.onblur= function(){
+    //     alert(input.value);
+    // };
+    
+    input.addEventListener("focusout",function(){
+      if(input.value!="")
+      alert(input.value)
+    })
+    
+    dis.addEventListener("dblclick",function(){
+      dis.style.color="red"
+    })
+    
+
+
+
+    
+  </script>
+</html>
