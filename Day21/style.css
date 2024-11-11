@@ -2,7 +2,7 @@
 
 
 body {
-     background-color: rgb(0, 0, 33);
+    background-color: rgb(30, 30, 30);
      color: white;
      margin: 0px;
      font-family: 'JetBrains Mono', monospace; /* For paragraph text */
@@ -53,6 +53,7 @@ nav  ul li a{
     /* background-color: blueviolet; */
     width: 30%;
     background-blend-mode: lighten;
+    
  }
  .rightsection img{
     width: 80%;
@@ -60,7 +61,12 @@ nav  ul li a{
     mix-blend-mode: rgb(0, 0, 33);
     background-blend-mode: darken;
     border-radius: 5px;
-    /* border: 2px solid rgb(12 74 110); */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));    /* border: 2px solid rgb(12 74 110); */
+
+ }
+ .rightsection img:hover{
+    transform: scale(1.05);
+    
 
  }
  .leftsection {
@@ -119,7 +125,10 @@ nav  ul li a{
  .image{
     height: 220px;
     width: 280px;
+    filter: brightness(0.9) contrast(1.2) opacity(0.8);
+   
  }
+
  .btn{
     border-radius: 16px;
     border: 2px solid rgb(69, 160, 213);
