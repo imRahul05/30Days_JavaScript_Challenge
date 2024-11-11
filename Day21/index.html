@@ -12,19 +12,21 @@
             <div class="left"> Rahul's Portfolio </div>
             <div class="right">
              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
              </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="aboutsection">
+        <section id class="aboutsection">
             <div class="leftsection">Hi, My NAME is <span class="purple">Rahul</span>
                 <div>and  I am a Passionate<span class="purple"></span></div>
-                <span id="element"></span> 
+                <span id="element"></span> <br>
+              <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a>
             </div>
         <div class="rightsection">
             <img src="https://miro.medium.com/v2/resize:fit:1400/1*0N8CVKix7OGfBDsgh9DzrQ.gif" alt="image">
@@ -32,19 +34,19 @@
         </section>
         <hr>
 
-        <section class="about">
+        <section id="about" class="about">
                 <h1 style="color: #FF5733;">About Me</h1>
-                <p class="para"> I'm Rahul Kumar, a passionate frontend developer with expertise in React.js and Flutter. 
-                    I hold a Master's degree in Computer Applications from Acharya Institute of Technology and
-                    completed my BCA from BN Mandal University. I have developed several interactive and 
+                <p class="para"> I'm Rahul Kumar, a passionate <span style="color: #FF5733;">frontend developer</span> with expertise in <span style="color: #FF5733;">React.js</span> and <span style="color: #FF5733;">Flutter</span> . 
+                    I hold a Master's degree <span style="color: #FF5733;">MCA</span>  in Computer Applications from Acharya Institute of Technology and
+                    completed my <span style="color: #FF5733;">BCA</span>  from Bhupendra Narayan Mandal University. I have developed several interactive and 
                     responsive web applications, including my personal portfolio and a blog platform with
                     features like user authentication, commenting, and upvoting. I was proud to be part of 
-                    the winning team at the Smart India Hackathon 2023, where we built a community care app to 
+                    the winning team at the <span style="color: #FF5733;">Smart India Hackathon 2023</span>, where we built a community care app to 
                     address public sanitation issues. I am driven by a commitment to user-centric design, innovation,
                     and creating impactful, scalable digital solutions.</p>
         </section>
         <hr>
-        <section class="skills">
+        <section id="skill" class="skills">
           <h1 style="color: #FF5733;">Skills</h1>
          <div class="skill-list">
           <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 10px;">
@@ -65,7 +67,7 @@
         </section>
 
         <hr>
-        <section class="projects">
+        <section id="projects" class="projects">
           <h1 style="color: #FF5733;">Projects</h1>
           <div class="project-list">
             <div class="box">
@@ -75,8 +77,9 @@
                   <h2 style="padding-left: 50px;">My PortFolio</h2>
                 </div>
                 <div class="button">
-                  <button class="btn">Github</button>
-                  <button class="btn">Demo</button>
+                  <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/main/Day21"><button class="btn">Github</button></a>
+                  <a href="https://imrahuvdev.netlify.app/"><button class="btn">Demo</button></a>
+
                 </div>
               </div>
             </div>
@@ -84,12 +87,13 @@
             <div class="box">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
-                  <img class="image" src="pr-1.png" alt="image">
-                  <h2 style="padding-left: 50px;">My PortFolio</h2>
+                  <img class="image" src="pr-2.png" alt="image">
+                  <h2 style="padding-left: 50px;">Dice Simulator</h2>
                 </div>
                 <div class="button">
-                  <button class="btn">Github</button>
-                  <button class="btn">Demo</button>
+                  <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/gh-pages"><button class="btn">Github</button></a>
+                  <a href="https://dicesm.netlify.app/"><button class="btn">Demo</button></a>
+
                 </div>
               </div>
             </div>
@@ -97,12 +101,12 @@
             <div class="box">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
-                  <img class="image" src="pr-1.png" alt="image">
+                  <img class="image" src="pr-3.png" alt="image">
                   <h2 style="padding-left: 50px;">My PortFolio</h2>
                 </div>
                 <div class="button">
-                  <button class="btn">Github</button>
-                  <button class="btn">Demo</button>
+                  <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/main/Day08"><button class="btn">Github</button></a>
+                  <a href="https://todo-html-six.vercel.app/"><button class="btn">Demo</button></a>
                 </div>
               </div>
             </div>
@@ -112,21 +116,32 @@
 
 
 
-        <section class="contact">
+        <section id="contact" class="contact">
           <div class="contact-form">
             <h1 style="color: #FF5733;">Contact Me</h1>
-            <form action="">
-              <input class="fiels"  type="text" placeholder="Name">
-              <input  class="fiels"  type="email" placeholder="Email">
-              <textarea  class="fiels" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-              <input type="submit" value="Send">
+            <form id="contact-form">
+              <input id="name" class="fiels" type="text" placeholder="Name" name="name">
+              <input id="mail" class="fiels" type="email" placeholder="Email" name="email">
+              <textarea id="message" class="fiels" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+              <input type="submit" value="Send" onclick="sendMail()">
             </form>
           </div>
         </section>
     </main>
 
 
-    <scrip src="index.js"></scrip>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "2BIUJo6skrdBcpbpx",
+  });
+})();
+</script>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {

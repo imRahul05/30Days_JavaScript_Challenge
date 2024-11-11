@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap');
 
- body {
+
+body {
      background-color: rgb(0, 0, 33);
      color: white;
      margin: 0px;
+     font-family: 'JetBrains Mono', monospace; /* For paragraph text */
+     font-size: 16px;
+     line-height: 1.6;
+ 
  }
  .left{
     font-size: 1.5rem;
@@ -82,6 +88,7 @@ nav  ul li a{
  .about,.skills,.projects,.contact{
     margin: 5px 58px 25px 37px;
     padding: 37px;
+    text-align: center;
 }
  
  .para{
@@ -122,10 +129,15 @@ nav  ul li a{
     background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
     color: #5a2d82;
     font-weight: bold;
-
-    
+ 
  
 
+ }
+ .btn:hover{
+   cursor: pointer;
+   background: linear-gradient(90deg, #a6c1ee, #fbc2eb);
+   color: #5a2d82;
+   transform: scale(1.05)
  }
  
  .button{
@@ -144,7 +156,6 @@ nav  ul li a{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
   }
   
   .fiels:focus {
@@ -183,3 +194,6 @@ nav  ul li a{
   input[type="submit"]:active {
     transform: translateY(0);
   }
+  html {
+    scroll-behavior: smooth;
+}
