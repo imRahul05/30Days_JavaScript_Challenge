@@ -10,6 +10,7 @@ Check out the live demos of some of the projects:
 - [Todo App 1](https://todo-html-six.vercel.app/)
 - [Todo App 2](https://imrahul05-todo-app.vercel.app/)
 - [30 Days JavaScript Challenge](https://30-days-java-script-challenge-bice.vercel.app/)
+- [Dice Simulator](https://dicesm.netlify.app/)
 
 ## JavaScript Concepts
 
