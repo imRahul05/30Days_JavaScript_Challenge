@@ -10,7 +10,7 @@
 
 
 // Initialize EmailJS with your User ID (public API key)
-emailjs.init('2BIUJo6skrdBcpbpx'); // Replace with your EmailJS User ID
+emailjs.init(''); // Replace with your EmailJS User ID
 
 // Function to send email
 function sendEmail(event) {
@@ -22,7 +22,7 @@ function sendEmail(event) {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_cdvzgyn", "template_eixd9sd", params)
+    emailjs.send("service_id", "template_id", params)
         .then(() => {
             alert("Email sent successfully");
             document.getElementById("contact-form").reset(); // Reset the form after sending

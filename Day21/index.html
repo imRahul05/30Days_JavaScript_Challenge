@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body >
     <header>
@@ -23,9 +24,9 @@
     </header>
     <main>
         <section id class="aboutsection">
-            <div class="leftsection">Hi, My NAME is <span class="purple">Rahul</span>
-                <div>and  I am a Passionate<span class="purple"></span></div>
-                <span id="element"></span> <br>
+            <div class="leftsection">Hi, My NAME is <span class="gradient-text">Rahul</span>
+                <div>and  I am a Passionate</div>
+                <span class="gradient-text" id="element"></span> <br>
               <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a>
             </div>
         <div class="rightsection">
@@ -74,10 +75,10 @@
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="pr-1.png" alt="image">
-                  <h2 style="padding-left: 50px;">My PortFolio</h2>
+                  <h2>My PortFolio</h2>
                 </div>
                 <div class="button">
-                  <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/main/Day21"><button class="btn">Github</button></a>
+                  <a href="#"><button class="btn">Github</button></a>
                   <a href="https://imrahuvdev.netlify.app/"><button class="btn">Demo</button></a>
 
                 </div>
@@ -88,7 +89,7 @@
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="pr-2.png" alt="image">
-                  <h2 style="padding-left: 50px;">Dice Simulator</h2>
+                  <h2 >Dice Simulator</h2>
                 </div>
                 <div class="button">
                   <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/gh-pages"><button class="btn">Github</button></a>
@@ -102,7 +103,7 @@
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="pr-3.png" alt="image">
-                  <h2 style="padding-left: 50px;">My PortFolio</h2>
+                  <h2 >Todo-app</h2>
                 </div>
                 <div class="button">
                   <a href="https://github.com/imRahul05/30Days_JavaScript_Challenge/tree/main/Day08"><button class="btn">Github</button></a>
@@ -119,7 +120,7 @@
         <section id="contact" class="contact">
           <div class="contact-form">
             <h1 style="color: #FF5733;">Contact Me</h1>
-            <form id="contact-form">
+            <form id="contact-form" netlify>
               <input id="name" class="fiels" type="text" placeholder="Name" name="name">
               <input id="mail" class="fiels" type="email" placeholder="Email" name="email">
               <textarea id="message" class="fiels" name="message" cols="30" rows="10" placeholder="Message"></textarea>
@@ -127,8 +128,23 @@
             </form>
           </div>
         </section>
+        <hr>
     </main>
 
+    <footer>
+      <div class="footer-content">
+        <h3 class="gradient-text">Rahul Kumar</h3>
+        <ul class="socials">
+          <li><a href="https://github.com/imRahul05"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/imRahul05/"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/imRahul05"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/imrahul512/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2024 Rahul Kumar. Designed and built with  <i class="fa-solid fa-heart"></i> <span class="gradient-text">Rahul Kumar</span></p>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
     <script type="text/javascript"
@@ -137,7 +153,7 @@
 <script type="text/javascript">
 (function(){
   emailjs.init({
-    publicKey: "2BIUJo6skrdBcpbpx",
+    publicKey: "",
   });
 })();
 </script>
@@ -145,7 +161,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Student','Web Developer','Web Designer'],
+          strings: ['Student','Web Developer','Tester','Web Designer'],
           typeSpeed: 50,
         });
       </script>
