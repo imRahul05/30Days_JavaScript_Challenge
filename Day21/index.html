@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=2778&format=png&color=000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Nosifer&display=swap" rel="stylesheet">
   </head>
   <body >
     <header>
@@ -29,7 +32,10 @@
             <div class="leftsection">Namaste, My NAME is <span class="gradient-text">Rahul</span>
                 <div>and  I am a Passionate</div>
                 <span class="gradient-text" id="element"></span> <br>
-              <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a>
+              <!-- <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a> -->
+              <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing">
+                <button  class="btn nosifer-regular"><span id="eli1"></span></button>
+              </a>
             </div>
         <div class="rightsection">
             <img src="https://miro.medium.com/v2/resize:fit:1400/1*0N8CVKix7OGfBDsgh9DzrQ.gif" alt="image">
@@ -120,6 +126,8 @@
 
 
         <section id="contact" class="contact">
+         <details>
+          <summary style="color: rgb(84, 219, 0);">Just click Here..🤏</summary>
           <div class="contact-form">
             <h1 style="color: #FF5733;">Contact Me</h1>
             <form id="contact-form" netlify>
@@ -130,6 +138,7 @@
             </form>
           </div>
         </section>
+         </details>
         <hr>
     </main>
 
@@ -164,6 +173,11 @@
     <script>
         var typed = new Typed('#element', {
           strings: ['Student','Web Developer','Tester','Web Designer'],
+          typeSpeed: 50,
+        });
+
+        var typed = new Typed('#eli1', {
+          strings: ['Hire Me','Click Here','.............','To','Download CV 🚀'],
           typeSpeed: 50,
         });
       </script>
