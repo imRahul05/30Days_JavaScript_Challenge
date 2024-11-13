@@ -40,7 +40,7 @@
                 <span class="gradient-text" id="element"></span> <br>
               <!-- <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a> -->
               <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing">
-                <button  class="btn nosifer-regular"><span id="eli1"></span></button>
+                <button  class="btn nosifer-regular" disabled><span id="eli1"></span></button>
               </a>
             </div>
         <div class="rightsection">
@@ -224,10 +224,12 @@
           typeSpeed: 50,
         });
 
+       setTimeout(()=>{
         var typed = new Typed('#eli1', {
           strings: ['Hire Me','Click Here','.............','To','Download CV 🚀'],
           typeSpeed: 50,
         });
+       },6000)
       </script>
   </body>
 </html>

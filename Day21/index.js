@@ -23,9 +23,7 @@ const dark = document.getElementById('toggle-mode');
 
 dark.addEventListener('click', function() {
 setTimeout(() => {
-    if(main.childNodes){
-        main.removeChild(main.childNodes[0]);
-    }
+  
 
     const div = document.createElement('div');
     div.style.color = '#721c24';
@@ -38,6 +36,7 @@ setTimeout(() => {
     setTimeout(() => {
       main.removeChild(div);
     }, 1000);
+
 },0)
 
 })

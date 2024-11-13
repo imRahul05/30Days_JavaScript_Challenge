@@ -242,11 +242,8 @@ nav  ul li a{
 
 }
 
-
-
-
-
-
-.logo{
-   
+.btn :disabled{
+   background: linear-gradient(90deg, #a6c1ee, #fbc2eb);
+    color: #5a2d82;
+    cursor: not-allowed;
 }
