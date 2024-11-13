@@ -64,12 +64,16 @@ nav  ul li a{
     mix-blend-mode: rgb(0, 0, 33);
     background-blend-mode: darken;
     border-radius: 5px;
+    border: #7f7f8b solid 1px;
     filter: brightness(0.9) contrast(1.2) opacity(0.8);
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(10px 10px 5px rgba(250, 1, 1, 0.5));
+
 
  }
  .rightsection img:hover{
     transform: scale(1.05);
+    box-shadow: #818181 ;
+    filter: drop-shadow(10px 10px 5px rgba(118, 107, 107, 0.5));
     
 
  }
@@ -128,7 +132,7 @@ nav  ul li a{
     border: #210539 2px solid;
     border-radius: 8px;
     filter: brightness(0.9) contrast(1.2) opacity(0.8);
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(10px 10px 5px rgba(104, 16, 16, 0.5));
 
 
  }

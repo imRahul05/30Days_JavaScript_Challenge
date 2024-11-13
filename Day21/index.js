@@ -1,59 +1,21 @@
 
+const main = document.getElementById('main-content');
+
+setTimeout(() => {
+ 
+
+  const div = document.createElement('div');
+  div.style.color = '#721c24';
+  div.className = "btn nosifer-regular ";
+  const text = document.createTextNode("🚧🚧 This site is still under Development....🚧🚧");
+  div.style.textAlign= 'center';
+
+  div.appendChild(text);
+  main.appendChild(div);
+
+  setTimeout(() => {
+    main.removeChild(div);
+  }, 5000);
+}, 0);
 
 
-
-
-
-
-
-
-
-
-// Initialize EmailJS with your User ID (public API key)
-emailjs.init(''); // Replace with your EmailJS User ID
-
-// Function to send email
-function sendEmail(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    let params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_id", "template_id", params)
-        .then(() => {
-            alert("Email sent successfully");
-            document.getElementById("contact-form").reset(); // Reset the form after sending
-        })
-        .catch((error) => {
-            console.error("Error sending email:", error);
-            alert("Failed to send email. Please try again later.");
-        });
-}
-
-// Add event listener to the form
-document.getElementById("contact-form").addEventListener("submit", sendEmail);
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function sendEmail(){
-//     let params = {
-//         name   : document.getElementById("name").value,
-//         email  :  document.getElementById("email").value,
-//         message:  document.getElementById("message").value,
-//     }
-
-//     emailjs.send("service_cdvzgyn","template_eixd9sd",params).then(alert("Email sent successfully"))
-// }
