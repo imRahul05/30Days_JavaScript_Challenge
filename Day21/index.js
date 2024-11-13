@@ -19,3 +19,25 @@ setTimeout(() => {
 }, 0);
 
 
+const dark = document.getElementById('toggle-mode');
+
+dark.addEventListener('click', function() {
+setTimeout(() => {
+    if(main.childNodes){
+        main.removeChild(main.childNodes[0]);
+    }
+
+    const div = document.createElement('div');
+    div.style.color = '#721c24';
+    const text = document.createTextNode("Working on dark mode toggle..");
+    div.style.textAlign= 'center';
+
+    div.appendChild(text);
+    main.appendChild(div);
+
+    setTimeout(() => {
+      main.removeChild(div);
+    }, 1000);
+},0)
+
+})

@@ -4,5 +4,8 @@
         "leftsection",
         "Rahul",
         "rightsection"
-    ]
+    ],
+    "files.associations": {
+        "plyconfig.json": "jsonc"
+    }
 }
