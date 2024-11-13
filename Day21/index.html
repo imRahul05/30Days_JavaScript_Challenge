@@ -38,9 +38,8 @@
             <div class="leftsection">Namaste, My NAME is <span class="gradient-text">Rahul</span>
                 <div>and  I am a Passionate</div>
                 <span class="gradient-text" id="element"></span> <br>
-              <!-- <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing"><button class="btn">Download CV</button></a> -->
-              <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing">
-                <button  class="btn nosifer-regular" disabled><span id="eli1"></span></button>
+              <a href="https://drive.google.com/file/d/1lAGa9uswcvlsFVrbSE0YApEwOfQoLwj-/view?usp=sharing" target="_blank">
+                <button  id="cli" class="btn nosifer-regular" disabled ><span id="eli1"></span></button>
               </a>
             </div>
         <div class="rightsection">
@@ -225,6 +224,8 @@
         });
 
        setTimeout(()=>{
+        const btn = document.getElementById('cli')
+        btn.disabled = false
         var typed = new Typed('#eli1', {
           strings: ['Hire Me','Click Here','.............','To','Download CV 🚀'],
           typeSpeed: 50,

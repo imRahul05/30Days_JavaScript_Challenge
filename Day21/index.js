@@ -32,7 +32,7 @@ setTimeout(() => {
 
     div.appendChild(text);
     main.appendChild(div);
-
+    
     setTimeout(() => {
       main.removeChild(div);
     }, 1000);

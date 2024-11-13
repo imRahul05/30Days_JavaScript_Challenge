@@ -193,9 +193,14 @@ nav  ul li a{
     gap: 15px;
     padding: 30px;
     border-radius: 10px; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 5px 15px rgba(146, 14, 14, 0.684); 
+    
   }
-    input[type="submit"] {
+
+  .contact-form input[type="text"]:hover,.contact-form input[type="email"]:hover,#message:hover{
+   border: 3px solid greenyellow;
+  }
+  .contact-form input[type="submit"] {
     padding: 15px 30px;
     margin-top: 15px;
     background-color: #FF5733;
@@ -208,12 +213,14 @@ nav  ul li a{
     transition: background-color 0.3s, transform 0.3s;
   }
   
-  input[type="submit"]:hover {
+  .contact-form  input[type="submit"]:hover {
     background-color: #e14a2b; 
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid greenyellow;
   }
   
-  input[type="submit"]:active {
+.contact-form input[type="submit"]:active {
     transform: translateY(0);
   }
   html {
@@ -242,8 +249,3 @@ nav  ul li a{
 
 }
 
-.btn :disabled{
-   background: linear-gradient(90deg, #a6c1ee, #fbc2eb);
-    color: #5a2d82;
-    cursor: not-allowed;
-}
