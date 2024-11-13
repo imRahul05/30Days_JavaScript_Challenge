@@ -67,14 +67,14 @@ nav  ul li a{
     border: #7f7f8b solid 1px;
     filter: brightness(0.9) contrast(1.2) opacity(0.8);
     filter: drop-shadow(10px 10px 5px rgba(250, 1, 1, 0.5));
-
+    
 
  }
  .rightsection img:hover{
     transform: scale(1.05);
     box-shadow: #818181 ;
     filter: drop-shadow(10px 10px 5px rgba(118, 107, 107, 0.5));
-    
+    cursor: cursor-grabbing;
 
  }
  .leftsection {
@@ -156,10 +156,10 @@ nav  ul li a{
 
  }
  .btn:hover{
-   cursor: pointer;
-   background: linear-gradient(90deg, #a6c1ee, #fbc2eb);
+   background: linear-gradient(90deg, #797d83, #fbc2eb);
    color: #5a2d82;
-   transform: scale(1.05)
+   transform: scale(1.05);
+   cursor: pointer;
  }
  
  .button{
@@ -199,6 +199,7 @@ nav  ul li a{
 
   .contact-form input[type="text"]:hover,.contact-form input[type="email"]:hover,#message:hover{
    border: 3px solid greenyellow;
+   cursor: text;
   }
   .contact-form input[type="submit"] {
     padding: 15px 30px;
@@ -207,10 +208,10 @@ nav  ul li a{
     color: #fff; 
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
+    
   }
   
   .contact-form  input[type="submit"]:hover {
@@ -218,6 +219,7 @@ nav  ul li a{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid greenyellow;
+    cursor: pointer;
   }
   
 .contact-form input[type="submit"]:active {

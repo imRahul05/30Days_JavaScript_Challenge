@@ -96,6 +96,13 @@
 
         <section id="projects" class="projects">
           <h1 style="color: #FF5733;">Projects</h1>
+          <label for="tech-filter" style="font-weight: bold;">Filter by Technology:</label>
+          <select id="tech-filter">
+            <option value="all">All</option>
+            <option value="html-css-js">HTML + CSS + JS</option>
+            <option value="react">React.js</option>
+            <option value="flutter">Flutter</option>
+          </select>
           <div class="project-list">
             <div class="box">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
@@ -128,7 +135,7 @@
             <div class="box">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
-                  <img class="image" src="pr-3.png" alt="image">
+                  <img class="image" src="./assets/calculator.png" alt="image">
                   <h2 >Calculator</h2>
                 </div>
                 <div class="button">
@@ -143,7 +150,7 @@
             <details>
             <summary style="color: rgb(84, 219, 0);">For more project click here..🤏</summary>
            <div class="project-list">
-            <div class="box">
+            <div class="box" data-tech="html-css-js">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="./assets/res.png" alt="image">
@@ -157,7 +164,7 @@
               </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-tech="html-css-js">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="./assets/music.png" alt="image">
@@ -171,7 +178,7 @@
               </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-tech="React.js">
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                 <div class="icon-head">
                   <img class="image" src="./assets/signin.png" alt="image">

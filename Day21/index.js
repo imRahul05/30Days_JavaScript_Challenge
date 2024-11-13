@@ -40,3 +40,20 @@ setTimeout(() => {
 },0)
 
 })
+
+
+document.getElementById('tech-filter').addEventListener('change', function () {
+    const selectedTech = this.value;
+    const projects = document.querySelectorAll('.project-list .box');
+  
+    projects.forEach(project => {
+      const tech = project.getAttribute('data-tech');
+  
+      if (selectedTech === 'all' || tech === selectedTech) {
+        project.style.display = 'block'; // Show the project
+      } else {
+        project.style.display = 'none'; // Hide the project
+      }
+    });
+  });
+  
