@@ -151,6 +151,7 @@ nav  ul li a{
     background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
     color: #5a2d82;
     font-weight: bold;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  
  
 
@@ -250,7 +251,6 @@ nav  ul li a{
     padding: 15px;
 
 }
-
 
 
 /* .container {

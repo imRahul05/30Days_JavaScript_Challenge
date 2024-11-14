@@ -3,7 +3,6 @@
   <head>
     <title>Calculator</title>
     
-
     <style>
       body{
         background-color: #212121;
@@ -13,7 +12,7 @@
         height: 400px;
         width: 400px;
         border: 2px solid black;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         margin: 50px auto;
         padding: 20px;
         border-radius: 5px;
@@ -29,10 +28,11 @@
         margin: 4px;
         padding: 20px;
         border-radius: 4px;
-        box-shadow: 5px 10px #ffffff;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         font-weight: bold;
         background-color: white;
         font-size: 20px;
+        border: none;
       }
       #display {
         padding: 20px;
@@ -90,11 +90,14 @@
   <script>
     let display = document.getElementById("display");
     let buttons = document.querySelectorAll(".btnn");
+    console.log(buttons)
     let currentInput = "";
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener("click", handleButtonClick);
+      
     }
     function handleButtonClick() {
+      
       let buttonText = this.textContent;
       if (buttonText === "C") {
         currentInput = "";

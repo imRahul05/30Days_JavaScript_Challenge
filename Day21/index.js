@@ -50,10 +50,13 @@ document.getElementById('tech-filter').addEventListener('change', function () {
       const tech = project.getAttribute('data-tech');
   
       if (selectedTech === 'all' || tech === selectedTech) {
-        project.style.display = 'block'; // Show the project
+        project.style.display = 'block';
       } else {
-        project.style.display = 'none'; // Hide the project
+        project.style.display = 'none'; 
       }
     });
   });
   
+
+
+
