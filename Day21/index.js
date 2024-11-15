@@ -57,6 +57,14 @@ document.getElementById('tech-filter').addEventListener('change', function () {
     });
   });
   
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) { // Adjust this value as needed
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
 
 
 
