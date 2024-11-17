@@ -273,7 +273,7 @@ nav ul li:hover a::after {
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(146, 14, 14, 0.684); 
 }
 .socials{
     display: flex;
@@ -284,5 +284,7 @@ nav ul li:hover a::after {
     padding: 15px;
 
 }
+
+
 
 
