@@ -24,3 +24,8 @@ for(let j=1;j<=5;j++){
      }
   console.log('-----------------')
 }
+
+
+
+console.log(6888/2)
+console.log(Math.sqrt(6888))
