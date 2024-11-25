@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+     
+      <script>
+        
+        var greet = function (name = "Guest") {
+        return `Hello !${name}`;
+        }
+        let name = prompt("Enter a name");
+
+          if (name === "" || name === null) {
+        name = "Guest"; 
+      }
+        alert(greet(name));
+
+
+      </script>
+  </body>
+</html>
