@@ -19,11 +19,9 @@ function generatePassword(length,includeNumbers ,includeSpecialChars){
     
 }
 
-// var length = prompt("Enter value")
-// var includeNumbers = prompt("Enter value")
-// var includeSpecialChars = prompt("Enter value")
+var length = prompt("Enter value")
+var includeNumbers = prompt("Enter value")
+var includeSpecialChars = prompt("Enter value")
 
-var length = 10
-var includeNumbers =true
-var includeSpecialChars = true
+
 console.log(generatePassword(length,includeNumbers ,includeSpecialChars))
