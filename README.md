@@ -14,7 +14,7 @@ Check out the live demos of some of the projects:
 - [30 Days JavaScript Challenge](https://30-days-java-script-challenge-bice.vercel.app/)
 - [Dice Simulator](https://dicesm.netlify.app/)
 - [My HTML PORTFOLIO](https://imrahuvdev.netlify.app/)
-- [Calculator](https://profound-basbousa-22f2b3.netlify.app/)
+- [Calculator](https://simplicalculatorbyrahul.netlify.app/)
 - [How to setup your Github Repo](https://imrahul05.github.io/How-to-setup-github-repo/)
 
 ## JavaScript Concepts
