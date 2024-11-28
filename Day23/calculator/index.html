@@ -2,67 +2,13 @@
 <html>
   <head>
     <title>Calculator</title>
-    
-    <style>
-      body{
-        background-color: #212121;
-      }
-      .container {
-        background-color: #f5f5f5;
-        height: 400px;
-        width: 400px;
-        border: 2px solid black;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        margin: 50px auto;
-        padding: 20px;
-        border-radius: 5px;
-      }
-      .btn {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        margin: 5px;
-        padding: 20px;
-      }
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-      .btnn {
-        margin: 4px;
-        padding: 20px;
-        border-radius: 4px;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        font-weight: bold;
-        background-color: white;
-        font-size: 20px;
-        border: none;
-      }
-      #display {
-        padding: 20px;
-        margin: 20px 20px 4px 40px;
-        border-radius: 5px;
-        width: 80%;
-        height: 50px;
-        text-align: right;
-        font-size: 28px;
-        background-color: #f5f5f5;
-        box-sizing: border-box;
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-      }
-      #plus,
-      #minus,
-      #multiply,
-      #divide,
-      #equal,
-      #clear{
-        background-color: #333;
-        color: #fff;
-      }
-      #clear {
-        background-color: red;
-      }
-    </style>
   </head>
   <body>
     <!--Please Code HTML tags Here in the Body Tag-->
-
+    <h1>Basic Calculator</h1>
     <div class="container">
       <div>
         <input type="text" id="display" disabled />
@@ -86,29 +32,24 @@
         <button class="btnn" id="divide">/</button>
       </div>
     </div>
+    <footer>
+      <div class="footer-content">
+        
+       
+      </div>
+      <div  class="footer-bottom">
+        <p>copyright &copy;2024. Designed and built with 
+           <i class="fa-solid fa-heart"></i>
+            <span class="gradient-text">Rahul Kumar</span>
+            <ul class="socials">
+              <li><a href="https://github.com/imRahul05"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/imRahul05/"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/imRahul165"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/imrahul512/"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </p>
+      </div>
+    </footer>
   </body>
-  <script>
-    let display = document.getElementById("display");
-    let buttons = document.querySelectorAll(".btnn");
-    console.log(buttons)
-    let currentInput = "";
-    for (let i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener("click", handleButtonClick);
-      
-    }
-    function handleButtonClick() {
-      
-      let buttonText = this.textContent;
-      if (buttonText === "C") {
-        currentInput = "";
-        display.value = currentInput;
-      } else if (buttonText === "=") {
-        currentInput = eval(currentInput).toString();
-        display.value = currentInput;
-      } else {
-        currentInput += buttonText;
-        display.value = currentInput;
-      }
-    }
-  </script>
+<script src="index.js"></script>
 </html>
