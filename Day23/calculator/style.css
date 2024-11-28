@@ -89,3 +89,27 @@ body{
     padding: 15px;
 
 }
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   /* Optional: to center vertically within the viewport */
+}
+.libutton {
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue color */
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #0077b5;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+
+.libutton:hover {
+  background-color: #0077b5;
+  color: white;
+}
