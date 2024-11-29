@@ -7,7 +7,15 @@ body {
      color: white;
      margin: 0px;
      font-family: 'JetBrains Mono', monospace; 
- }
+     background-color: #212121;
+     background-image: url('https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+     color: white;
+     text-shadow: 8px 8px 10px #0000008c;
+     background-size: cover; 
+     background-repeat: no-repeat; 
+     background-attachment: fixed; 
+     background-blend-mode: overlay; 
+ }  
 
  .nosifer-regular {
    font-family: "Nosifer", sans-serif;

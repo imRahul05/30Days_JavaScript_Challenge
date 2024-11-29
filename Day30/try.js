@@ -286,24 +286,91 @@
 
 // console.log(rectangle.perimeter())
 
-let bankAccount = {
-    accountHolderName:'Maximus',
-    balance:20000,
-    deposit:function(value){
-       this.balance = this.balance+value
-       return  `Balance :: ${this.balance}`
-    },
-    withdraw:function(value){
-        if(value>this.balance)
-            return `You are Broke`
-        else{
-            this.balance = this.balance-value
-            return `Updated balance :: ${this.balance}`
-        }
+// let bankAccount = {
+//     accountHolderName:'Maximus',
+//     balance:20000,
+//     deposit:function(value){
+//        this.balance = this.balance+value
+//        return  `Balance :: ${this.balance}`
+//     },
+//     withdraw:function(value){
+//         if(value>this.balance)
+//             return `You are Broke`
+//         else{
+//             this.balance = this.balance-value
+//             return `Updated balance :: ${this.balance}`
+//         }
+//     }
+// }
+
+
+// console.log(bankAccount.deposit(1000))
+// console.log(bankAccount.withdraw(10000))
+// console.log(bankAccount.withdraw(10000000))
+
+// let bag=''
+// function starPattern(n){
+//     for(let i =1;i<=n;i++){
+//         if(i===n){
+//             bag+="*"
+//             console.log(bag)
+//         }
+//         else{
+//             console.log("*")
+//             bag+="*_"
+//         }
+    
+//     }
+// }
+
+// starPattern(5)
+
+
+// function starPattaer1(n){
+    
+//     let bag=''
+//     for(let i=0;i<n;i++){
+//         bag+="* "
+//     }
+//     console.log(bag)
+//     bag=''
+//     for(let i=0;i<n-2;i++){
+//        bag=''
+//        bag+="*"
+//         for(let i=0;i<(n-2)*2+1;i++)
+//             bag+="&"
+
+//        bag+="*"
+       
+//        console.log(bag)
+//     }
+    
+//     bag=''
+//     for(let i=0;i<n;i++){
+//         bag+="* "
+//     }
+//     console.log(bag)
+
+
+
+// }
+
+// starPattaer1(2)
+
+
+function numberPattern(n){
+    let temp=''
+    for(let i=1;i<=n;i++){
+        temp = temp+i
+        console.log(temp)
     }
+    let tt = ''
+    for(let i=0;i>temp.length;i--){
+        
+       // console.log(temp[i])
+        tt= tt+ temp[i]
+    }
+    console.log(tt)
 }
 
-
-console.log(bankAccount.deposit(1000))
-console.log(bankAccount.withdraw(10000))
-console.log(bankAccount.withdraw(10000000))
+numberPattern(5)

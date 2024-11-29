@@ -1,12 +1,28 @@
 body{
     background-color: #212121;
+    background-image: url('https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     align-items: center;
     text-align: center;
     text-shadow: 8px 8px 10px #0000008c;
+    background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-blend-mode: overlay; 
  }
+ /* body {
+  background-color: #121212; 
+  background-image: url('Day23/calculator/img.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-blend-mode: overlay; 
+  color: white; 
+  font-family: Arial, sans-serif; 
+ } */
+
   .container {
     background-color: #575353;
     height: 400px;
