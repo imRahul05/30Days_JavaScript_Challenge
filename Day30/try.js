@@ -358,19 +358,120 @@
 // starPattaer1(2)
 
 
-function numberPattern(n){
-    let temp=''
-    for(let i=1;i<=n;i++){
-        temp = temp+i
-        console.log(temp)
-    }
-    let tt = ''
-    for(let i=0;i>temp.length;i--){
-        
-       // console.log(temp[i])
-        tt= tt+ temp[i]
-    }
-    console.log(tt)
+// function numberPattern(n){
+//     let temp = '';
+    
+//     for (let i = 1; i <= n; i++){
+//         temp += i;
+//         console.log(temp);
+//     }
+//     for (let i = n - 1; i >= 1; i--){
+//         temp = temp.slice(0, i);
+//         console.log(temp);
+//     }
+// }
+
+// numberPattern(5);
+
+
+// const masai = () =>{
+//     console.log("WEB-4")
+// }
+
+// const sum =(a,b)=>{
+//     console.log(a+b)
+// }
+// sum(3,4)
+
+
+
+
+
+
+
+// let obj= {
+//     a:1,
+//     b:2,
+//     sum:function(){
+//        console.log(this.a)
+//        console.log(this)
+//        let nestedarrowfunction=()=>{
+//         console.log(this,"inside nested arrow function")
+//         let now=()=>{
+//             console.log(this)
+//         }
+//         now();
+//       }
+       
+//        nestedarrowfunction();
+//     }
+   
+    // diff:()=>{
+    //    console.log(this.a)
+    //    console.log(this)
+    // }
+//}
+//obj.sum()
+
+// obj.diff()
+
+// const numbers = [1,2,3,4,5]
+
+// const [n1,n2,n3,n4,n5] = numbers
+
+// console.log(n1,n2,n3,n4,n5)
+
+// let names = ['ankur','neha','ritiki','anuska']
+
+// const [s1,s2,s3,s4] = names
+
+// console.log(s1,s2,s3,s4)
+
+
+// const numbers = [1,2,3,4,5]
+
+// const [n1,n2,n3, ,n5] = numbers
+
+// console.log(n1,n2,n3,n5)
+
+// let arr = [[1,,2],[3,4,5]]
+
+// let [[a1,a2],[b1,b2,b3]] =arr
+// console.log(a1,a2,b1,b2,b3)
+
+// const fruits =['apple','mango','pineapple','orange']
+
+// const [[f1,f2],[f3,f4]] = fruits
+// console.log(f1,f2,f3,f4)
+
+// const numbers = [10,20,30,40,50]
+
+// const [first, , third]=numbers
+
+
+// console.log(first,third)
+
+
+// let x=5;
+// let y=10;
+
+//  [y,x] = [x,y]
+
+//  console.log(x,y)
+
+// const nestedArray =[1,[2,3],4]
+
+// let [a,[b,c]] = nestedArray
+
+// console.log(a,b,c)
+
+
+const obj={
+    name:'he',
+    age:22,
+    langauge:'malayam'
 }
 
-numberPattern(5)
+const {name,langauge}=obj
+
+console.log(name,langauge)
