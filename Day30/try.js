@@ -466,12 +466,68 @@
 // console.log(a,b,c)
 
 
-const obj={
-    name:'he',
-    age:22,
-    langauge:'malayam'
-}
+// const obj={
+//     name:'he',
+//     age:22,
+//     langauge:'malayam'
+// }
 
-const {name,langauge}=obj
+// const {name,langauge}=obj
 
-console.log(name,langauge)
+// console.log(name,langauge)
+
+// let weatherData ={
+//     humidity:"High",
+//     latitude:  90,
+//     longitude:100,
+//     address:{
+//         city:"Delhi",
+//         pincode:53001,
+//     },
+// }
+
+// // const {address}=weatherData
+// // console.log(address)
+
+// // const {city,pincode}=address
+
+// // console.log(city,pincode)
+
+
+// const {address:{city,pincode}} =weatherData
+// console.log(city,pincode)
+
+
+// const device ={
+//     id:101,
+//     specs:{
+//         os:"Android",
+//         hardware:{
+//             ram:"4GB",
+//             storage:"64GB",
+//         },
+//     },
+// };
+
+
+// const {specs:{os,hardware:{ram,storage}}}= device
+
+// console.log(os,ram,storage)
+
+//Rest paramenter
+br
+
+//spread parameter
+
+
+//spread operator is ued to copy another array
+
+// let arr1 = [1,2,3,4,5,6,7]
+
+// let arr2 =[...arr1]
+
+// console.log(arr2)
+// console.log(...arr2)
+
+arguments
+
