@@ -1,14 +1,13 @@
-function star(n){
-    for(let i=0;i<n;i++){
-    temp =''
-    for(let i=0;i<n;i++){
-      temp+="*"
+function star1(n) {
+    const container = document.getElementById('star-container');
+    container.innerHTML = ''
+    for (let i = 0; i < n; i++) {
+        let temp = '';
+        for (let j = 0; j < n; j++) {
+            temp += '*';
+        }
+        container.innerHTML += temp + '\n';
     }
-    
-    console.log(temp)
-    }
-  }
-  
-  
-  
-  star(5)
+}
+
+star1(5)

@@ -1,16 +1,16 @@
-function star12(n) {
+function star(n) {
     const container = document.getElementById('star-container');
-    container.innerHTML = ''; // Clear previous content
+    let temp = '';
 
     for (let i = 1; i <= n - 1; i++) {
-        let temp = '';
+        temp = '';
         for (let j = 1; j <= i; j++) temp += '*';
         for (let j = 1; j <= (n - i) * 2 - 1; j++) temp += ' ';
         for (let j = 1; j <= i; j++) temp += '*';
         container.innerHTML += temp + '\n';
     }
 
-    let temp = '';
+    temp = '';
     for (let j = 1; j <= 2 * n - 1; j++) temp += '*';
     container.innerHTML += temp + '\n';
 
@@ -23,4 +23,4 @@ function star12(n) {
     }
 }
 
-star12(9);
+star(5);
