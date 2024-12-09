@@ -31,4 +31,4 @@ function star(n){
 
 
 
-star(10)
+star(5)
