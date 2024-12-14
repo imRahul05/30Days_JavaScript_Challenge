@@ -9,7 +9,7 @@ This repository is designed to help users improve their JavaScript skills over 3
 
 Check out the live demos of some of the projects:
 
-- [Todo App 1 using HTML,CSS ,JS](https://todo-html-six.vercel.app/)
+- [Todo App 1 using HTML,CSS ,JS](https://todo-list-htmls-css-js-by-rahul.vercel.app/)
 - [Todo App 2 (React,js)](https://imrahul05-todo-app.vercel.app/)
 - [30 Days JavaScript Challenge](https://30-days-java-script-challenge-bice.vercel.app/)
 - [Dice Simulator](https://dicesm.netlify.app/)
