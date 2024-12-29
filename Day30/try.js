@@ -341,3 +341,27 @@ function solve(N, A) {
   }
   console.log(-1);
 }
+function runProgram(input) {
+  let lines = input.split("\n"); 
+  let T = parseInt(lines[0], 10);
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'; 
+  let result = []; 
+
+  for (let i = 1; i <= T; i++) {
+      let str = lines[i];
+      let count = new Array(26).fill(0); 
+      for (let j = 0; j < str.length; j++) {
+          let char = str[j];
+          let index = alphabet.indexOf(char);
+          if (index !== -1) {
+              count[index]++;
+          }
+      }
+      result.push(count.join(" "));
+  }
+  console.log(result.join("\n"));
+}
+let input = `2
+aeiou
+aaeiou`;
+runProgram(input);
