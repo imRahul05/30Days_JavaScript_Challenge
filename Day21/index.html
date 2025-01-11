@@ -11,7 +11,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Nosifer&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link
+ rel="stylesheet"
+ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 </head>
+
+
+
         <!-- This is the starting of Body. -->
   <body >
     <!-- Updates LOG -->
@@ -52,6 +62,7 @@
         <div class="rightsection">
             <img src="https://miro.medium.com/v2/resize:fit:1400/1*0N8CVKix7OGfBDsgh9DzrQ.gif" alt="image">
         </div> 
+       
         </section>
         <hr>
         <!-- This is the starting of About section. -->
@@ -67,6 +78,11 @@
                     address public sanitation issues. I am driven by a commitment to user-centric design, innovation,
                     and creating impactful, scalable digital solutions.</p>
         </section>
+
+        <div class="calendar" style="margin: 8rem; padding: 20px;">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+        </div>
         <hr>
 
                 <!-- This is the starting of SKILLS SECTION. -->
@@ -252,7 +268,11 @@
 
     <script src="index.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+              
     <script>
+        GitHubCalendar(".calendar", "imrahul05");
+      // or enable responsive functionality
+      GitHubCalendar(".calendar", "imrahul05", { responsive: true });
         var typed = new Typed('#element', {
           strings: ['Student','Web Designer','Tester','Web Developer'],
           typeSpeed: 50,
