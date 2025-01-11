@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Amitabh</h1>
+    <button onclick="change()"> Change the heading by clicking here.....</button>
+</body>
+
+<script>
+    const heading = document.getElementById('head')
+    const btn = document.getElementsByTagName('Button')
+    console.log(heading)
+     console.log(btn)
+    function change(){
+        if(heading.textContent==='Rajni'){
+           heading.textContent="Amitabh"
+           btn.textContent='changed...'
+        }
+    else{
+         btn.innerText='changed...'
+          heading.textContent="Rajni"
+    }
+    console.log(btn.innerHTML)
+    }
+    // console.log(heading)
+</script>
+</html>
