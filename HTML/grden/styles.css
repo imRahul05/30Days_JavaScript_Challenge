@@ -174,16 +174,16 @@ button{
     
 }
 .newmain .box{
-    padding: 5rem;
+    padding: 3rem;
     background-color: aliceblue;
-    display: inline-block;
+    display: flex;
     justify-content: center;
-    justify-items: center;
-    margin-left: 27rem;
-    /* margin-top: 6rem;  */
-    border-radius: 35px;
+    width: 50%;
+    align-content: center;
     align-items: center;
-   
+    border-radius: 35px;
+    flex-direction: column;
+    margin: auto;
 }
 .newmain .box h1{
     color:  #413f8d;
@@ -210,4 +210,9 @@ footer{
 }
 footer div ul li {
     list-style: none;
+}
+footer .ftr{
+   line-height: 2rem;
+   justify-content: center;
+   color: white;
 }
