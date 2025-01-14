@@ -385,3 +385,77 @@ let C = 0
     }
 
 }
+//sliding window
+
+// fixed size and variable size problems
+
+// let arr = [1, 4, 20, 3, 10, 5];
+// let n = 6;
+// let target = 23;
+
+// let start = 0;
+// let sum = 0;
+// let count=0
+// for (let end = 0; end < n; end++) {
+//   count++
+//     sum += arr[end];
+//     while (sum > target && start <= end) {
+//         count++
+//         sum -= arr[start];
+//         start++;
+//     }
+//     if (sum === target) {
+//         console.log(`Subarray indices ${start} , ${end}`);
+//         break;
+//     }
+// }
+
+// if (sum !== target) {
+//     console.log("No");
+// }
+// console.log("cvount",count)
+
+function findPairUsingTwoPointers(arr, n, k) {
+
+   arr.sort((a, b) => a - b);
+ 
+   let left=0;       
+   let right=n-1;  
+ 
+   while(left<right){
+     const sum=arr[left]+arr[right];
+ 
+     if(sum===k){
+       console.log(1); 
+       return;
+     } else if (sum < k) {
+       left++; 
+     } else {
+       right--;  
+     }
+   }
+ 
+   console.log(-1); // No such pair exists
+ }
+ 
+ 
+ function findCommonElements(arr1, arr2) {
+   let i = 0;                 // Pointer for the ascending array
+   let j = arr2.length - 1;   // Pointer for the descending array
+   const result = [];         // Array to store common elements
+ 
+   while (i < arr1.length && j >= 0) {
+     if (arr1[i] === arr2[j]) {
+       result.push(arr1[i]);  // Common element found
+       i++;
+       j--;
+     } else if (arr1[i] < arr2[j]) {
+       i++;                   // Move the pointer for the smaller element
+     } else {
+       j--;                   // Move the pointer for the larger element
+     }
+   }
+ 
+   return result;
+ }
+ 
