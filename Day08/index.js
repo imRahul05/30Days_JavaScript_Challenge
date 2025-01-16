@@ -3,32 +3,62 @@ const addbtn = document.getElementById("add-btn");
 const tododis = document.getElementById("todo-list")
 const arr = [];
 
+const filterButtons = document.getElementById("filter-buttons");
+const totalTasksCounter = document.getElementById("total-tasks");
+const completedTasksCounter = document.getElementById("completed-tasks-count");
+const incompleteTasksCounter = document.getElementById("incomplete-tasks-count");
+
+filterButtons.addEventListener("click", (e) => {
+    if (e.target.id === "all-tasks") {
+        display();
+    } else if (e.target.id === "completed-tasks") {
+        display("completed");
+    } else if (e.target.id === "incomplete-tasks") {
+        display("incomplete");
+    }
+});
+
 addbtn.addEventListener("click", add);
 
+function updateCounters() {
+    const totalTasks = arr.length;
+    const completedTasks = arr.filter(task => task.completed).length;
+    const incompleteTasks = totalTasks - completedTasks;
+
+    totalTasksCounter.textContent = totalTasks;
+    completedTasksCounter.textContent = completedTasks;
+    incompleteTasksCounter.textContent = incompleteTasks;
+}
+
 function add() {
-    if (input.value == "")
+    if (input.value == "") {
         alert("Please enter a task....");
-    else {
-        arr.push(input.value);
-        input.value = ""
+    } else {
+        arr.push({ text: input.value, completed: false });
+        input.value = "";
         display();
     }
 }
 
-function display() {
-    tododis.innerHTML = ''
+function display(filter = "all") {
+    tododis.innerHTML = '';
     arr.forEach((task, i) => {
+        if (filter === "completed" && !task.completed) return;
+        if (filter === "incomplete" && task.completed) return;
+
         const li = document.createElement("li");
         li.className = "todo-item";
 
         const checkBox = document.createElement("input");
         checkBox.type = "checkbox";
         checkBox.className = "check";
-        checkBox.addEventListener("click", () => strike(i));
+        checkBox.checked = task.completed;
+        checkBox.addEventListener("click", () => toggleCompletion(i));
 
         const taskText = document.createElement("span");
         taskText.className = "todo-text";
-        taskText.innerHTML = task;
+        taskText.innerHTML = task.text;
+        if (task.completed) taskText.classList.add("strike");
 
         const deleteBtn = document.createElement("button");
         deleteBtn.innerHTML = "Delete";
@@ -51,21 +81,26 @@ function display() {
 
         tododis.appendChild(li);
     });
+    updateCounters();
 }
 
 function del(i) {
-    arr.splice(i, 1)
+    arr.splice(i, 1);
     display();
 }
 
 function edit(i) {
     const nwtask = prompt("Enter task");
-    arr[i] = nwtask
+    arr[i].text = nwtask;
     display();
 }
 
-function strike(i) {
-    const li = document.querySelectorAll("li")[i];
-    li.classList.toggle("strike");
-    arr[i] = li.classList.contains("strike") ? `~~${arr[i]}~~` : arr[i].replace(/~~/g, '');
+function toggleCompletion(i) {
+    arr[i].completed = !arr[i].completed;
+    display();
 }
+
+document.getElementById("sort-tasks").addEventListener("click", () => {
+    arr.sort((a, b) => a.text.localeCompare(b.text));
+    display();
+});

@@ -13,8 +13,19 @@
     <input type="text" id="todo-input" placeholder="Enter a task..">
     <button id="add-btn" class="btn btn-primary">Add</button>
 
+    <div id="filter-buttons">
+        <button id="all-tasks">All Tasks</button>
+        <button id="completed-tasks">Completed Tasks</button>
+        <button id="incomplete-tasks">Incomplete Tasks</button>
+    </div>
+    <div id="task-counter">
+        <p>Total Tasks: <span id="total-tasks">0</span></p>
+        <p>Completed Tasks: <span id="completed-tasks-count">0</span></p>
+        <p>Incomplete Tasks: <span id="incomplete-tasks-count">0</span></p>
+    </div>
+
     <div id="todo-list" class="list-group">
-        <!-- Todo items will be dynamically added here -->
+      
     </div>
    </div>
     
