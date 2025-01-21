@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+    <h1>Local storage</h1>
+    
+</body>
+</html>
+<script>
+ const student = {
+  name: "Rahul Kumar",
+  age: 24,
+  gender: "Male",
+  rollNumber: "MCA2025001",
+  department: "Computer Applications",
+  subjects: ["Mathematics", "Data Structures", "Operating Systems", "Web Development"],
+  grades: {
+    Mathematics: "A",
+    "Data Structures": "A+",
+    "Operating Systems": "B+",
+    "Web Development": "A"
+  },
+  address: {
+    street: "123 Main Street",
+    city: "Saharsa",
+    state: "Bihar",
+    postalCode: "852201"
+  },
+  isHosteller: false,
+  contact: {
+    phone: "9876543210",
+    email: "rahul.kumar@example.com"
+  }
+};
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const studentData = JSON.parse(localStorage.getItem('studentData'));
+//     const studentInfo = document.createElement('div');
+//     studentInfo.innerHTML = `
+//         <h2>Student Information</h2>
+//         <p><strong>Name:</strong> ${studentData.name}</p>
+//         <p><strong>Age:</strong> ${studentData.age}</p>
+//         <p><strong>Gender:</strong> ${studentData.gender}</p>
+//         <p><strong>Roll Number:</strong> ${studentData.rollNumber}</p>
+//         <p><strong>Department:</strong> ${studentData.department}</p>
+//         <p><strong>Subjects:</strong> ${studentData.subjects.join(', ')}</p>
+//         <p><strong>Grades:</strong></p>
+//         <ul>
+//             ${Object.entries(studentData.grades).map(([subject, grade]) => `<li>${subject}: ${grade}</li>`).join('')}
+//         </ul>
+//         <p><strong>Address:</strong> ${studentData.address.street}, ${studentData.address.city}, ${studentData.address.state} - ${studentData.address.postalCode}</p>
+//         <p><strong>Hosteller:</strong> ${studentData.isHosteller ? 'Yes' : 'No'}</p>
+//         <p><strong>Contact:</strong> Phone - ${studentData.contact.phone}, Email - ${studentData.contact.email}</p>
+//     `;
+//     document.body.appendChild(studentInfo);
+// });
+
+localStorage.setItem('studentData', JSON.stringify(student));
+</script>
