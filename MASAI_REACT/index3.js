@@ -126,5 +126,5 @@ function Counter() {
   }
   
   
-//ReactDOM.createRoot(document.getElementById('root')).render(<Counter/>)
+ReactDOM.createRoot(document.getElementById('root')).render(<Counter/>)
 console.log(ReactDOM.createRoot(document.getElementById('root')));
